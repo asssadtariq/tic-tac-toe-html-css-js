@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .gamePlayButton {
+            background-image: url('photo.jpg');
+            background-size: 350px 200px;
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gamePlayButton button {
+            width: 21vw;
+            height: 11vh;
+            font-size: 40px;
+            text-transform: uppercase;
+            border: 5px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .gamePlayButton button a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        .gamePlayButton button a:hover {
+            color: white;
+            border-radius: 20px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            border: 10px solid lightslategray;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to Tic Tac Toe</h1>
+    <div class="gamePlayButton">
+        <button> <a href="playgame.html"> Start Game </a></button>
+    </div>
+
+    <script>
+        localStorage.clear();
+        var playerName = "Cristiano Ronaldo";   //prompt("Enter First Player Name : ");
+        localStorage.setItem('name-one', playerName);
+        playerName = "Lionel Messi";    //prompt("Enter Second Player Name : ");
+        localStorage.setItem('name-two', playerName);
+
+        localStorage.setItem('p-one-won', 0);
+        localStorage.setItem('p-one-lost', 0);
+        localStorage.setItem('p-one-draw', 0);
+
+        localStorage.setItem('p-two-won', 0);
+        localStorage.setItem('p-two-lost', 0);
+        localStorage.setItem('p-two-draw', 0);
+
+        currentTurn = Math.floor(Math.random * 101);
+        if (currentTurn >= 50)
+            localStorage.setItem('currentplayer', 1);
+        else 
+            localStorage.setItem('currentplayer', 2);
+
+        localStorage.setItem('box1', "-");
+        localStorage.setItem('box2', "-");
+        localStorage.setItem('box3', "-");
+        localStorage.setItem('box4', "-");
+        localStorage.setItem('box5', "-");
+        localStorage.setItem('box6', "-");
+        localStorage.setItem('box7', "-");
+        localStorage.setItem('box8', "-");
+        localStorage.setItem('box9', "-");
+        localStorage.setItem('matchstatus', 0);
+    </script>
+</body>
+
+</html>

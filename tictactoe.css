@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: whitesmoke;
+    height: 12vh;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+
+header nav h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+}
+
+header nav h3 {
+    width: 160px;
+}
+
+header nav ul {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 1100px;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li button {
+    width: 100px;
+    height: 40px;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    background-color: rgb(168, 0, 112);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+header nav ul li button:hover {
+    background-color: rgb(2, 90, 6);
+    color: whitesmoke;
+}
+
+main {
+    height: 78vh;
+    width: 100vw;
+    display: inline-flex;
+}
+
+.player1 {
+    width: 25vw;
+    text-align: center;
+}
+
+.player1 table img {
+    height: 140px;
+    width: 140px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.gameboard {
+    width: 50vw;
+    margin-top: 20px;
+}
+
+.gameboard table{
+    border: 5px solid black;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.gameboard button {
+    width: 120px;
+    height: 120px;
+    color: whitesmoke;
+}
+
+.gameboard table td{
+    border : 3px solid black;
+}
+
+#play-again {
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 240px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#play-again:hover {
+    background-color: magenta;
+}
+
+.player2 {
+    width: 25vw;
+    text-align: center;
+}
+
+.player2 table img {
+    height: 140px;
+    width: 140px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.player1 h1, .player2 h1 {
+    margin: 10px 0px;
+} 
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

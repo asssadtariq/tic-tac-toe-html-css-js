@@ -1,0 +1,63 @@
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 20vh;
+    }
+
+    header nav {
+        display: inline-block;
+    }
+
+    header nav h2 {
+        margin-left: 150px;
+    }
+
+    header nav ul {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    main {
+        display: block;
+        height: auto;
+    }
+
+    .player1 {
+        display: flex;
+        text-align: left;
+        height: 150px;
+    }
+
+    .player1 table img{
+        margin: 0;
+    }
+
+    .player1 h1, .player2 h1 {
+        margin: 0px 10px;
+        width: 300px;
+        margin-right: 50px;
+    } 
+
+    h3 {
+        display: contents;
+    }
+
+    .player2 {
+        display: flex;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .player2 table img{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .gameboard {
+        display: contents;
+    }
+
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="stylesheet" href="tictactoe2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>Tic Tac Toe</h2>
+            <ul>
+                <li id="player-name1"> </li>
+                <li> vs </li>
+                <li id="player-name2"> </li>
+                <li> <a href="tictactoe.html"> <button> RESTART </button> </a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="player1">
+            <table>
+                <tr>
+                    <td id="ronaldopic" onclick="changeRonaldoPhoto()"> <img src="ronaldo/ronaldo (1).webp" alt=""></td>
+                </tr>
+            </table>
+
+            <h1 id="player-name-1">Player 1</h1>
+            <h3 id="pOne_won">Won : </h3>
+            <h3 id="pOne_lost">Lost : </h3>
+            <h3 id="pOne_draw">Draw : </h3>
+
+        </div>
+
+        <div class="gameboard">
+            <table>
+
+                <tr>
+                    <td><button id="box1" onclick="fillBox(1)"></button></td>
+                    <td><button id="box2" onclick="fillBox(2)"></button></td>
+                    <td><button id="box3" onclick="fillBox(3)"></button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="box4" onclick="fillBox(4)"></button></td>
+                    <td><button id="box5" onclick="fillBox(5)"></button></td>
+                    <td><button id="box6" onclick="fillBox(6)"></button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="box7" onclick="fillBox(7)"></button></td>
+                    <td><button id="box8" onclick="fillBox(8)"></button></td>
+                    <td><button id="box9" onclick="fillBox(9)"></button></td>
+                </tr>
+
+            </table>
+
+            <button id="play-again" onclick="playAgain()">Play Again</button>
+
+        </div>
+
+        <div class="player2">
+            <table>
+                <tr id="messipic" >
+                    <td onclick="changeMessiPhoto()"> <img src="messi/messi (1).png"></td>
+                </tr>
+            </table>
+            <h1 id="player-name-2">Player 2</h1>
+            <h3 id="pTwo_won">Won : </h3>
+            <h3 id="pTwo_lost">Lost : </h3>
+            <h3 id="pTwo_draw">Draw : </h3>
+        </div>
+
+    </main>
+
+    <footer>
+        Tic Tac Toe All Rights Reserved Copyrights &copy;
+    </footer>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
